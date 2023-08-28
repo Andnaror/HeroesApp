@@ -166,6 +166,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "WiEBAcn",
+      "superhero": "Black Widow",
+      "publisher": "DC Comics",
+      "alter_ego": "Natasha Romanova",
+      "first_appearance": "Tales of Suspence #52",
+      "characters": "Natasha Romanova",
+      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/4/4c/Natasha_Romanoff_%28Earth-8096%29_from_Avengers_Earth%27s_Mightiest_Heroes_%28animated_series%29_Season_1_11_001.png"
     }
   ]
 }
