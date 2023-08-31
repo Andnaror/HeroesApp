@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, CanMatch, Route,UrlSegment, RouterStateSnapshot, UrlTree, CanMatchFn, Router } from '@angular/router';
-import { Observable, tap } from 'rxjs';
+import { Observable, map, tap } from 'rxjs';
 import { AuthService } from '../services/auth-service.service';
 
 @Injectable({providedIn: 'root'})
@@ -20,6 +20,7 @@ export class PublicGuard implements  CanMatch, CanActivate {
         if(isAuth)
           this.router.navigate(['/heroes'])
       }),
+      map(isAuth=>!isAuth)
 
     )
   }
