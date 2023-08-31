@@ -3,6 +3,7 @@
     <mat-toolbar color="accent">
       <span>Menú</span>
       <span class="spacer"></span>
+
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
@@ -23,9 +24,12 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>
+    <span>{{user?.email}}</span>
+    <button mat-button
+      (click)="onLogout()">
       <mat-icon>logout</mat-icon> Logout
-    </button>
+    </button
+    >
   </mat-toolbar>
 
   <div class="container">
